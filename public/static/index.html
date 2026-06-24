@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>neeraj-built — freelance web developer & immersive web experiences</title>
+<meta name="description" content="Freelance web developer with 8 years building reliable websites, web apps & SEO. Custom interactions, scroll experiences and brand-led portfolio sites." />
+<meta property="og:title" content="neeraj-built — freelance web developer" />
+<meta property="og:description" content="Reliable, interactive websites & web apps. 50+ projects shipped." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Instrument+Serif:ital@0;1&display=swap" />
+
+<!-- Bootstrap 5 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"><span id="cursorLabel"></span></div>
+
+<!-- Grain overlay -->
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="site-nav">
+  <a href="#" class="brand" data-cursor="home">
+    <img src="https://neeraj-built.example.com/logo.png" id="brandLogo" alt="neeraj-built" />
+  </a>
+  <nav class="nav-pill d-none d-md-flex">
+    <a href="#home" class="active">index</a>
+    <a href="#work">work</a>
+    <a href="#blog">blog</a>
+  </nav>
+  <div class="nav-right">
+    <span class="time-chip d-none d-md-inline" id="clock">--:--:-- IST</span>
+    <button class="btn-contact" data-cursor="say hi" data-bs-toggle="modal" data-bs-target="#contactModal">
+      <span class="blink-dot"></span> contact
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container-fluid px-4 px-md-5">
+    <p class="kicker">// 00 — freelance web developer · since 2017</p>
+    <h1 class="display-hero">
+      i build the <span class="serif-italic">unreasonably good</span> web.
+    </h1>
+
+    <div class="row align-items-end mt-5 g-4">
+      <div class="col-md-7">
+        <p class="lead-text">
+          Custom websites, web apps & SEO for founders and studios who want
+          their site to actually feel like something. 50+ projects shipped.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <button class="btn-primary-pill" data-bs-toggle="modal" data-bs-target="#contactModal" data-cursor="let's talk">
+            start a project →
+          </button>
+          <a href="#work" class="btn-ghost-pill" data-cursor="peek">see the work</a>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="portrait-wrap" data-cursor="that's him">
+          <img src="https://placeholder.local/portrait.jpg" id="heroPortrait" alt="Neeraj" />
+          <span class="portrait-tag">that's me</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- floating shapes -->
+  <svg class="float-shape s1" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" /></svg>
+  <svg class="float-shape s2" viewBox="0 0 100 100"><polygon points="50,5 95,95 5,95" /></svg>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>React</span><span>·</span><span>Next.js</span><span>·</span>
+    <span>GSAP</span><span>·</span><span>Lenis</span><span>·</span>
+    <span>Tailwind</span><span>·</span><span>Node</span><span>·</span>
+    <span>Supabase</span><span>·</span><span>Webflow</span><span>·</span>
+    <span>SEO</span><span>·</span>
+    <span>React</span><span>·</span><span>Next.js</span><span>·</span>
+    <span>GSAP</span><span>·</span><span>Lenis</span><span>·</span>
+    <span>Tailwind</span><span>·</span><span>Node</span><span>·</span>
+    <span>Supabase</span><span>·</span><span>Webflow</span><span>·</span>
+    <span>SEO</span><span>·</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+  <div class="container-fluid px-4 px-md-5">
+    <p class="kicker">/ 02 — services</p>
+    <h2 class="section-title">What I do, <span class="serif-italic">obsessively.</span></h2>
+
+    <div class="row g-4 mt-4">
+      <div class="col-md-4">
+        <article class="service-card" data-cursor="hire me">
+          <div class="card-num">01</div>
+          <h3>Website Development</h3>
+          <p>Marketing sites, portfolios and brand experiences that load fast, rank well and feel alive.</p>
+          <ul class="check-list">
+            <li>Custom interactive landing pages</li>
+            <li>CMS-backed marketing sites</li>
+            <li>Scroll & motion choreography</li>
+            <li>Accessibility & Core Web Vitals</li>
+          </ul>
+          <div class="tag-row">
+            <span>React</span><span>Next.js</span><span>GSAP</span><span>Lenis</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4">
+        <article class="service-card" data-cursor="build it">
+          <div class="card-num">02</div>
+          <h3>Web Apps</h3>
+          <p>Dashboards, SaaS MVPs, internal tools — built end-to-end with auth, payments and a clean database.</p>
+          <ul class="check-list">
+            <li>Full-stack MVPs in weeks</li>
+            <li>Auth, payments, file storage</li>
+            <li>Realtime & API integrations</li>
+            <li>Admin panels & dashboards</li>
+          </ul>
+          <div class="tag-row">
+            <span>TypeScript</span><span>Supabase</span><span>Stripe</span><span>Tailwind</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4">
+        <article class="service-card" data-cursor="rank up">
+          <div class="card-num">03</div>
+          <h3>SEO</h3>
+          <p>Technical SEO, on-page optimization and content structure so the work you ship actually gets found.</p>
+          <ul class="check-list">
+            <li>Technical audits & fixes</li>
+            <li>Schema, sitemaps, metadata</li>
+            <li>Page-speed & CWV tuning</li>
+            <li>Keyword & content strategy</li>
+          </ul>
+          <div class="tag-row">
+            <span>Search Console</span><span>GA4</span><span>Schema.org</span><span>Ahrefs</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PITCH -->
+<section class="pitch">
+  <div class="container-fluid px-4 px-md-5">
+    <p class="kicker">// 03 — why work with me</p>
+    <p class="pitch-copy">
+      I'm going to assume you found this page because you need a
+      <em>new website</em>. I hope that's not too presumptive of me. But
+      initial consultations are <span class="hl">free</span>, so you really
+      don't have much to lose. And everything to gain.
+    </p>
+    <button class="btn-primary-pill mt-4" data-bs-toggle="modal" data-bs-target="#contactModal">
+      let's talk →
+    </button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="marquee-big">
+    <div class="marquee-track">
+      <span>available for projects ✦ let's build something ✦</span>
+      <span>available for projects ✦ let's build something ✦</span>
+      <span>available for projects ✦ let's build something ✦</span>
+    </div>
+  </div>
+  <div class="container-fluid px-4 px-md-5 py-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <p class="kicker">// neeraj-built</p>
+        <p class="footer-tag">Freelance dev crafting reliable websites & web apps since 2017.</p>
+      </div>
+      <div class="col-md-3">
+        <p class="kicker">// sitemap</p>
+        <ul class="link-list"><li><a href="#home">Index</a></li><li><a href="#work">Work</a></li><li><a href="#blog">Blog</a></li></ul>
+      </div>
+      <div class="col-md-3">
+        <p class="kicker">// elsewhere</p>
+        <ul class="link-list"><li><a href="#">GitHub</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">Twitter / X</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© <span id="year"></span> neeraj-built — all rights reserved</span>
+      <span>made by hand, in india</span>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- CONTACT MODAL -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content contact-modal">
+      <div class="modal-header border-0">
+        <div>
+          <p class="kicker mb-1">// say hi</p>
+          <h3 class="m-0">Let's build something <span class="serif-italic">real.</span></h3>
+        </div>
+        <button type="button" class="btn-close-x" data-bs-dismiss="modal" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <form id="contactForm" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label>Name</label>
+              <input type="text" name="name" required />
+            </div>
+            <div class="col-md-6">
+              <label>Email</label>
+              <input type="email" name="email" required />
+            </div>
+            <div class="col-md-12">
+              <label>WhatsApp number</label>
+              <input type="tel" name="whatsapp" placeholder="+91 ..." />
+            </div>
+
+            <div class="col-12">
+              <label>What services are you interested in?</label>
+              <div class="chip-group" data-name="service">
+                <button type="button" class="chip">Development</button>
+                <button type="button" class="chip">White-Label</button>
+                <button type="button" class="chip">Design & Development</button>
+                <button type="button" class="chip">Not sure yet</button>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="d-flex justify-content-between align-items-center">
+                <label class="m-0">What's your budget? <span class="opt">(optional)</span></label>
+                <div class="currency-toggle" id="currencyToggle">
+                  <button type="button" data-cur="USD" class="active">$ USD</button>
+                  <button type="button" data-cur="INR">₹ INR</button>
+                </div>
+              </div>
+              <div class="chip-group mt-2" data-name="budget" id="budgetChips"></div>
+            </div>
+
+            <div class="col-12 d-flex justify-content-end gap-2 mt-2">
+              <button type="button" class="btn-ghost-pill" data-bs-dismiss="modal">cancel</button>
+              <button type="submit" class="btn-primary-pill">submit →</button>
+            </div>
+          </div>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
